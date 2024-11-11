@@ -1,0 +1,25 @@
+The paper titled **"A Cost-Efficient IoT Service Placement Approach using Whale Optimization Algorithm in Fog Computing Environment"** by **M. Ghobaei-Arani and A. Shahidinejad** applies the **Whale Optimization Algorithm (WOA)**, which is a **metaheuristic** algorithm. This approach is commonly utilized in IoT and fog computing for complex optimization tasks due to WOA’s capacity for efficient global search, which aligns with metaheuristic characteristics.
+
+### Goals of Improvement in the Solution
+The main objectives of the proposed algorithm in this research are:
+1. **Cost Efficiency**: To find an optimal service placement that minimizes overall deployment costs in the fog computing environment.
+2. **Energy Reduction**: By selecting energy-efficient resources, it aims to reduce the power consumption of IoT services.
+3. **Quality of Service (QoS) Compliance**: The algorithm focuses on meeting service-level QoS requirements, including minimizing service delays, by leveraging fog nodes’ proximity.
+
+### Task and Resource Attributes
+The tasks (IoT services) have attributes such as:
+- **Computational Demand**: Represents the processing load each service requires.
+- **QoS Requirements**: Each IoT service has latency or deadline constraints that must be met in fog deployment.
+
+For resources (fog nodes), the attributes include:
+- **Processing Capacity**: Determines the speed at which the node can execute tasks.
+- **Energy Efficiency**: The rate of energy consumption, crucial for cost-effective IoT service placements.
+- **Availability**: Each node’s resource availability is monitored to meet high QoS standards.
+
+### Code Analysis
+The provided code does reflect a similar structure to the algorithm described in the paper:
+1. **WOA Structure**: The `WhaleOptimizationScheduling` class implements the core principles of WOA, where whales represent service placement configurations across fog nodes.
+2. **Fitness Evaluation**: The `objective_function` method calculates energy consumption, workload balance, and penalties for any QoS violations, aligning with the paper’s goals of cost and QoS optimization.
+3. **WOA Operators**: The optimization step, including exploration and exploitation phases, adheres to WOA’s logic. Here, the `optimize` method uses parameters `a`, `A`, and random values to simulate the whales’ bubble-net feeding behavior to explore and refine solutions.
+
+In conclusion, the code implementation aligns well with the metaheuristic Whale Optimization Algorithm described in the paper. You can read the full research for further details on [ScienceDirect here](https://www.sciencedirect.com/science/article/pii/S0957417422004304).

@@ -1,0 +1,16 @@
+In the NSGA-II paper for task scheduling in fog-cloud environments, here are the main attributes typically considered for **tasks** and **resources**:
+
+### Task Attributes:
+1. **Processing Time**: The estimated time required for a task to complete, influencing the scheduling decisions.
+2. **Base Energy Consumption**: An initial or baseline energy value that represents the energy demand of the task, often used to calculate dynamic energy based on the resource chosen.
+3. **Task Deadline**: The maximum allowed completion time, ensuring tasks meet their respective time constraints.
+4. **Priority Level** (if applicable): Indicates task importance, which may affect resource allocation.
+   
+### Resource Attributes:
+1. **Capacity**: The maximum load or processing power that a resource can handle, acting as a constraint on task allocation.
+2. **Efficiency Factor**: A multiplier representing the energy efficiency of the resource, used to adjust a task's energy consumption dynamically based on the assigned resource.
+3. **Execution Speed (or Frequency)**: The rate at which a resource can process tasks, which affects task completion time.
+4. **Idle Power Consumption**: Energy consumed by the resource even when it is not processing tasks, relevant in energy-constrained environments.
+
+### Additional Constraints:
+The paper may also incorporate **dependency constraints** among tasks, where certain tasks must be completed before others can start, along with **load balancing considerations** to prevent overload on any single resource. Let me know if you'd like further details or clarifications on any specific attributes!
