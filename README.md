@@ -1,5 +1,3 @@
----
-
 # A Survey on Task Scheduling Strategies for Edge and Cloud Environments: Trends and Recent Advances
 
 This repository contains the code, data, and findings for the survey titled **"A Survey on Task Scheduling Strategies for Edge and Cloud Environments: Trends and Recent Advances."** In this study, we analyze and compare five prominent algorithms used for task scheduling across edge devices and cloud environments, focusing on their optimization goals, strategies, and performance.
@@ -75,9 +73,9 @@ Each algorithm's performance was evaluated based on:
 
 ## Repository Structure
 
-- **/data**: Contains the dataset files, including resource and task characteristics.
-- **/src**: Contains implementations for each algorithm.
-- **/results**: Performance results and analysis for each algorithm on the standardized dataset.
+- **/dataset**: Contains the dataset files, including resource and task characteristics.
+- **/Algorithms**: Contains implementations for each algorithm.
+- **/Algorithms/results**: Performance results and analysis for each algorithm on the standardized dataset.
 - **README.md**: Overview of the project and instructions for usage.
 
 ## How to Run
@@ -97,6 +95,6 @@ Each algorithm's performance was evaluated based on:
    Each algorithm script can be executed individually from the `/Algorithms/algorithm-name/main.py` directory. Results will be saved in `/results` as numpy arrays for now that can be compared in `/results/test-results.py`.
 
 4. **Analyze Results**:
-   Results are presented in both raw data and summarized metrics to compare execution time, energy consumption, and deadline adherence.
+   Results are presented in both raw data and summarized metrics to compare execution time, energy consumption.
 
 ---
